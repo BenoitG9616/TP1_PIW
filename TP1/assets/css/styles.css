@@ -1,0 +1,108 @@
+/* CSS Navigation */
+nav {
+    background-color: #3498db; 
+    color: white;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white; /* Change l
+    text-decoration: none; /* Enlève le soulignement des liens */
+    padding: 0 15px; /* Ajoute du padding autour des liens */
+  }
+
+/* Liste de produit */
+ul#product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul#product-list li {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  ul#product-list h2 {
+    margin: 0 0 10px;
+  }
+  
+  ul#product-list p {
+    margin: 5px 0;
+  }
+
+  /* Styles de base pour la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Conteneur principal avec Flexbox */
+  .container {
+    display: flex;
+    height: 100vh; /* Hauteur de la fenêtre */
+  }
+  
+  /* Sidebar (1/4 de la largeur) */
+  .sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+/* Contenu principal (3/4 de la largeur) */
+.main-content {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Grille de produits */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style-type: none; /*Retrait des puces */
+  }
+  
+  .product-grid li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .product-grid li.highlight {
+    border: 2px solid #007BFF; /* Bordure bleue pour mettre en évidence */
+    background-color: #e7f3ff; /* Couleur de fond pour mettre en évidence */
+  }
+  
+  .product-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Section aside pour les détails du produit */
+  .product-detail {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+/* Bouton */
+.sort-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .sort-buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
